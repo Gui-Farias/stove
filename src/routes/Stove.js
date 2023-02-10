@@ -1,4 +1,6 @@
-import soundEletric from '$lib/sounds/stoneEletric.mp3';
+import soundEletric from '$lib/sounds/eletric.mp3';
+
+import Stove from '../lib/Organisms/Stove/Stove.svelte'
 
 export default class StoveContructor {
   constructor(mouth, oven, color, brand, size) {
@@ -7,6 +9,24 @@ export default class StoveContructor {
     this.color = color;
     this.brand = brand;
     this.size = size;
+  }
+
+  //create Stove in html
+  createStove() {
+    const stoveElement = document.createElement("div");
+    stoveElement.className = `stove__${this.brand}`;
+    stoveElement.style.background = this.color;
+    stoveElement.innerHTML = `
+    <p>Brand: ${this.brand}</p>
+    `
+
+    // Trying show the component # error #
+    // ${Stove}
+    // Stove
+    // <Stove/>
+    ;
+
+    document.body.appendChild(stoveElement);
   }
 
 

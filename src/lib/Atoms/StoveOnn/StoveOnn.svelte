@@ -1,5 +1,5 @@
 <script>
-  import soundEletric from '$lib/sounds/stoneEletric.mp3';
+  import soundEletric from '$lib/sounds/eletric.mp3';
 
   export let type = '';
 
@@ -17,7 +17,6 @@
       default:
         break;
     }
-    
   }
   
   //function for turn on the light in oven

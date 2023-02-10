@@ -4,9 +4,9 @@
 
   import StoveContructor from './Stove.js';
 
-  const Sto = new StoveContructor(4, true, 'white', 'bras', 'med')
+  const myStove = new StoveContructor(4, true, 'white', 'bras', 'med')
 
-  console.log(Sto);
+  console.log(myStove);
 </script>
 
 <main class="main">
